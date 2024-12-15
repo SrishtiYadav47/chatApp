@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+  
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="outer" class="container">
+      <div class="row">
+        <div id="log"  class="col-sm-3 mx-auto text-light bg-info shadow mt-5 pb-4">
+         <h2 class="text-center pt-3">Login Form</h2>
+         <form action="" class="my-3 p-3 rounded bg-light text-dark pb-4 ">
+            <label for="">Enter Your User Name</label>
+            <input type="text" class="form-control" id="username">
+            <label for="">Enter Your Password</label>
+            <input type="password" class="form-control" id="password">
+            <br>
+           <button class="btn btn-primary col-12 shadow"  type="button" onclick="log()">Login</button>
+        </form>
+        </div>
+      </div>
+
+      <div class="row bg-secondary p-3 mt-5 " id="chatapp">
+        <div class="col-sm-2 ms-auto p-4 bg-light text-dark rounded-3">
+           <div class="d-flex">
+            <i class="fa-solid fa-user-circle fs-3"></i>
+            <span class="fs-5 my-auto d-none d-md-inline me-1">Srishti Yadav</span>
+           </div>
+        </div>
+        <div class="col-sm-8 me-auto p-4 bg-light rounded-3 ms-1">
+
+            <div class="row">
+                <div class="col-sm-12" id="chatbox">
+                    <ul id="msg">
+                       
+                    </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-10">
+                    <textarea name="" id="msgbox" class="form-control"></textarea>
+                </div>
+                <div class="col-2 my-auto">
+                    <button class="btn btn-danger form-comtrol" type="button" onclick="send()">
+                        <i class="fa fa-paper-plane"></i>
+                        <span class="d-md-inline d-none"  >Send</span>
+                    </button>
+                </div>
+              </div>
+
+
+        </div>
+      </div>
+
+
+    
+
+    </div>
+
+
+
+
+ <script src="js/script.js"></script> 
+ <script src="js/bootstrap.bundle.js"></script>  
+</body>
+</html>
