@@ -1,0 +1,36 @@
+body{
+    background-color: aqua;
+}
+
+#chatapp{
+    display: none;
+    height: 100vh;
+}
+#chatbox{
+    height: 75vh;
+    background-color: cadetblue;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    overflow: auto;
+
+}
+.col-8>.row+.row{
+    height: 15%;
+}
+
+/* #log{
+    display: none;
+} */
+#msg{
+float:right;
+text-align: right;
+}
+.msgtext{
+    list-style-type: none;
+    margin-top: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    /* width: 100%; */
+    display: inline-block;
+}
